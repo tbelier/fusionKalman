@@ -10,12 +10,9 @@ class robot():
                            [vy0],
                            [theta0]])
         
-
 def evolue():
     robA.X = A@robA.X + mvnrnd2(np.array([0,0,0,0,0]), Galpha)
     robB.X = A@robB.X + mvnrnd2(np.array([0,0,0,0,0]), Galpha)
-
-    
 
 def affichage():
     xA,yA,_,_,thetaA = robA.X.flatten()
